@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyCurrency</string>
+    <string name="foreignCurrency">外币</string>
+    <string name="foreignCurrencyAmount">请输入外币金额：</string>
+    <string name="homeCurrencyAmount">所得金额：</string>
+    <string name="homeCurrency">本国货币</string>
+    <string name="calculate">计算</string>
 </resources>

@@ -8,4 +8,29 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="lable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">20</item>
+        <item name="android:textSize">@dimen/mSize</item>
+    </style>
+
+    <style name="lable.gray">
+        <item name="android:layout_margin">@dimen/mMargin</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="lable.white">
+        <item name="android:layout_margin">@dimen/mMargin</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="slable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/mMargin</item>
+        <item name="android:layout_marginRight">@dimen/mMargin</item>
+        <item name="android:layout_weight">20</item>
+    </style>
+
 </resources>
