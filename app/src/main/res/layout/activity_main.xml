@@ -10,59 +10,55 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_weight="20"
             android:gravity="fill"
             android:text="@string/foreignCurrency"
-            android:textSize="@dimen/mSize" />
+            style="@style/lable.white" />
 
         <Spinner
             android:id="@+id/spinnerFirst"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_weight="55"
-            android:gravity="top"
-            android:scrollbarSize="@dimen/mSize" />
+            android:gravity="fill"
+            android:scrollbarSize="@dimen/mSize"
+            style="@style/slable" />
 
         <EditText
-            android:id="@+id/editAmount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_weight="20"
+            android:id="@+id/editText"
+            android:autofillHints=""
+            android:digits="0123456789."
             android:ems="10"
             android:hint="@string/foreignCurrencyAmount"
-            android:inputType="textPersonName"
-            android:autofillHints="" />
+            android:inputType="numberDecimal"
+            style="@style/lable.white" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginLeft="@dimen/mMargin"
+            android:layout_marginRight="@dimen/mMargin"
+            android:text="@string/calculate"
+            style="@style/lable" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:gravity="fill"
+            android:text="@string/homeCurrency"
+            style="@style/lable.white" />
+
+        <Spinner
+            android:id="@+id/spinnerSecond"
+            android:gravity="fill"
+            style="@style/slable" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:gravity="fill"
+            android:text="@string/homeCurrencyAmount"
+            style="@style/lable.white" />
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline">
-
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.44" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

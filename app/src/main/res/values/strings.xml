@@ -5,4 +5,8 @@
     <string name="homeCurrencyAmount">所得金额：</string>
     <string name="homeCurrency">本国货币</string>
     <string name="calculate">计算</string>
+    <string name="mnu_item1">显示可转换币种</string>
+    <string name="mnu_item2">交换币种</string>
+    <string name="mnu_item3">查看记录</string>
+    <string name="exit">退出</string>
 </resources>
